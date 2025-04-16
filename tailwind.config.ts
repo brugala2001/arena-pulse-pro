@@ -17,6 +17,9 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+			sans: ['Inter', 'sans-serif'],
+		},
 		extend: {
 			colors: {
 				border: 'hsl(var(--border))',
@@ -51,6 +54,30 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				// Cores personalizadas para o sistema de futebol
+				'team-blue': {
+					DEFAULT: '#1a365d',
+					light: '#2c4b7c',
+					dark: '#102744',
+					foreground: '#ffffff'
+				},
+				'team-green': {
+					DEFAULT: '#3c8c40',
+					light: '#4ca350',
+					dark: '#2d6b30',
+					foreground: '#ffffff'
+				},
+				'team-orange': {
+					DEFAULT: '#f97316',
+					light: '#fb8c3c',
+					dark: '#e76707',
+					foreground: '#ffffff'
+				},
+				'field': {
+					DEFAULT: '#4ade80',
+					light: '#86efac',
+					dark: '#22c55e'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
