@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import Dashboard from "./pages/Dashboard";
 import Players from "./pages/Players";
+import Training from "./pages/Training";
 import { Layout } from "./components/layout/Layout";
 
 const queryClient = new QueryClient();
@@ -20,7 +22,7 @@ const App = () => (
           <Route element={<Layout />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/players" element={<Players />} />
-            <Route path="/training" element={<Dashboard />} />
+            <Route path="/training" element={<Training />} />
             <Route path="/matches" element={<Dashboard />} />
             <Route path="/medical" element={<Dashboard />} />
             <Route path="/communication" element={<Dashboard />} />
